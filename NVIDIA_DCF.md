@@ -27,7 +27,27 @@ The input I distrust most is the five-year FCFF-growth path, particularly years 
 
 Before running the grid, I predicted its highest corner would be 9% WACC / 4% terminal growth, because a lower discount rate and higher terminal growth both increase value. The 11% / 2% corner should be the lowest.
 
-The reverse DCF holds starting FCFF, WACC, terminal growth, cash, debt, and diluted shares fixed, solving only for a uniform shift to all five explicit FCFF-growth rates. It is an implied expectation, **not proof of mispricing**.
+### Sensitivity grid — value per diluted share ($)
+
+| WACC \ terminal growth | 2.0% | 3.0% | 4.0% |
+|---:|---:|---:|---:|
+| 9.0% | 182.76 | 207.39 | 241.88 |
+| 10.0% | 158.85 | 176.67 | 200.42 |
+| 11.0% | 140.30 | 153.66 | 170.84 |
+
+The centre/base case is **$176.67** (10.0% WACC, 3.0% terminal growth). Value falls down the table as WACC increases and rises to the right as terminal growth increases. The predicted furthest high-value corner is **$241.88** at 9.0% / 4.0%; the opposite low corner is **$140.30** at 11.0% / 2.0%.
+
+### Reverse DCF — actual calculation
+
+Target market price = **$223.67 per share**. The model holds starting FCFF ($96,895.847M), WACC (10.0%), terminal growth (3.0%), cash ($62,556M), debt ($8,468M), and diluted shares (24,514M) fixed. It uses bisection over a uniform shift from −5.0 to +10.0 percentage points applied to all five explicit FCFF-growth rates.
+
+| Uniform growth-rate shift | Value per share |
+|---:|---:|
+| −5.0 points (lower bound) | $148.09 |
+| **+6.9002 points (solved)** | **$223.67** |
+| +10.0 points (upper bound) | $247.97 |
+
+The solved shift changes the explicit growth path from **70%, 40%, 25%, 15%, 8%** to **76.90%, 46.90%, 31.90%, 21.90%, 14.90%**. Because the target lies within the bracket ($148.09 to $247.97), bisection has a solution. This is an implied expectation, **not proof of mispricing**.
 
 **Watch/defer. Initiate if** the price falls below about **$176.67**, or sourced operating evidence supports a higher five-year FCFF-growth path without erosion in reinvestment or margins; **otherwise defer.** **Monitor:** Data Center revenue growth and operating-cash-flow conversion at the next quarterly report.
 
