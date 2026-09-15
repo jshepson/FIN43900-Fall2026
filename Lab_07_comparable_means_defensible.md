@@ -1,24 +1,8 @@
-# Lab 07 — Comparable Means Defensible
+# Comparable Means Defensible
 
-## What I need to submit
-
-Submit the GitHub links to this reflection and to `lab_07_pe_comps.py` in the Lab 07 Brightspace quiz when the instructor says to start it. The required evidence is the checked Asbury calculation, a justified peer decision, and an interpretation of the changed-peer result. This is an individual submission.
-
-## Reopen and explain
+## DCF context and question
 
 My Week 3 DCF produces a base value of $176.67 per NVIDIA share, with a sensitivity range of $140.30 to $241.88. The major drivers are the five-year FCFF growth path, WACC, and terminal growth; the early growth assumptions are the input I distrust most. My initial question was: why can two companies in the same industry have different P/E multiples, and when would that difference make the comparison misleading?
-
-Run the saved DCF from this folder with:
-
-```bash
-python dcf.py
-```
-
-Run the Lab 07 calculator with:
-
-```bash
-python lab_07_pe_comps.py
-```
 
 ## What P/E means
 
