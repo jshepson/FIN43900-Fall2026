@@ -11,15 +11,14 @@ from statistics import median
 # INPUTS (edit these values for a different case)
 # =============================================================================
 TARGET = {
-    "ticker": "ABG",
-    "name": "Asbury Automotive",
-    "price": 243.03,
-    "diluted_eps": 21.50,
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "price": 218.36,
+    "diluted_eps": 4.90,
 }
 
 PEERS = [
-    {"ticker": "AN", "name": "AutoNation", "price": 169.84, "diluted_eps": 16.92},
-    {"ticker": "GPI", "name": "Group 1 Automotive", "price": 421.48, "diluted_eps": 36.81},
+    {"ticker": "AMD", "name": "Advanced Micro Devices", "price": 503.60, "diluted_eps": 2.65},
 ]
 # =============================================================================
 
