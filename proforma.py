@@ -106,6 +106,7 @@ def main():
         }
         current["assets"] = inventory + ppe + other_assets + cash
         current["liabilities"] = floor_plan + debt + revolver + other_liabilities
+        current["liabilities_and_equity"] = current["liabilities"] + equity
         current["balance_gap"] = current["assets"] - current["liabilities"] - equity
         assert_balanced(year, current["balance_gap"], cash)
         model.append(current)
@@ -124,7 +125,9 @@ def main():
         ("Other assets", values("other_assets")), ("Cash", values("cash")),
         ("Total assets", values("assets")), ("Floor plan", values("floor_plan")),
         ("Term debt", values("debt")), ("Revolver", values("revolver")),
-        ("Other liabilities", values("other_liabilities")), ("Equity", values("equity")),
+        ("Other liabilities", values("other_liabilities")),
+        ("Total liabilities", values("liabilities")), ("Equity", values("equity")),
+        ("Total liabilities + equity", values("liabilities_and_equity")),
     ])
     print_table("Cash Flow", [
         ("Net income", values("net_income")), ("Depreciation", values("depreciation")),
