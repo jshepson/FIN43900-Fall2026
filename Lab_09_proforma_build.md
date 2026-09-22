@@ -6,16 +6,6 @@ What are five years of a company's statements worth, built from assumptions I ca
 
 This lab builds a five-year three-statement model for Asbury Automotive Group (ABG), from FY2025 actual opening balances through FY2030E. All dollar amounts are USD millions unless noted otherwise.
 
-## Files and how to run the model
-
-The complete calculation engine is in `proforma.py`. It uses only the Python standard library.
-
-```bash
-python3 proforma.py
-```
-
-The program prints the income statement, balance sheet, cash-flow statement, annual balance checks, and equity valuation.
-
 ## Opening FY2025 balance sheet and operating base
 
 | Line | Amount |
