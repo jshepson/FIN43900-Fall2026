@@ -1,6 +1,6 @@
 # NVIDIA (NVDA) — Lab 10 Pro-Forma
 
-**Model date:** September 24, 2026. All dollar amounts are USD millions except per-share values. This is a course exercise, not investment advice.
+**Model date:** September 24, 2026. All dollar amounts are USD millions except per-share values.
 
 ## The question
 
@@ -72,15 +72,3 @@ The model calculates cash from net income, D&A, capex, working-capital changes, 
 The model's value per share is **$190.81**, calculated using the same 24,304m shares outstanding reported in the FY2026 10-K. The check block prints **$0.0m** in FY2027E–FY2031E and cash remains above the $10.0bn floor; the base case does not draw the revolver.
 
 The market price was **$221.70 per NVDA share on September 24, 2026** (during-market historical record; use the prior close if submitting before the close). The model says **$190.81** per share; the market says **$221.70** per share on September 24, 2026, with the model using the same 24,304m-share count. The question is whether the assumed Data Center growth fade and elevated reinvestment are too conservative or too optimistic.
-
-## Partner review — complete in class
-
-**Partner's specific attack:** [Paste the actual question your partner asked about one judgment label.]
-
-**My two-sentence answer:** [Answer with your own reasons and state what evidence would change the assumption.]
-
-**My attack on my partner's model:** [Record the specific assumption you challenged and why.]
-
-## Reflection — complete in class
-
-The label I would defend longest is [complete after discussion]. The filing number that surprised me was [complete after discussion].
