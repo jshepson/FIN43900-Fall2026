@@ -12,7 +12,7 @@ NVIDIA is different because the speed and profitability of its Data Center ramp 
 
 ## Three-year history — GAAP
 
-Each history value below is from the linked Form 10-K financial statements, not a data provider. I personally re-opened the FY2026 10-K's income-statement revenue and net-income lines and its balance-sheet inventory line before using them.
+Each history value below is from the linked Form 10-K financial statements, not a data provider. Before submitting, independently open the FY2026 10-K and confirm at least two items (for example, revenue and inventory).
 
 | Item | FY2024 | FY2025 | FY2026 | Filing source |
 |---|---:|---:|---:|---|
@@ -23,6 +23,27 @@ Each history value below is from the linked Form 10-K financial statements, not 
 | Inventory | 5,282 | 10,080 | 21,403 | [FY2025 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm); [FY2026 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm) |
 | PP&E, net | 3,914 | 6,283 | 10,383 | [FY2025 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm); [FY2026 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm) |
 | Shareholders' equity | 42,978 | 79,327 | 157,293 | [FY2025 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm); [FY2026 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm) |
+
+## FY2026 opening balance sheet used in the model
+
+| Item | January 25, 2026 |
+|---|---:|
+| Cash and cash equivalents | 10,605 |
+| Marketable securities | 51,951 |
+| Accounts receivable, net | 38,466 |
+| Inventory | 21,403 |
+| Prepaids and other current assets | 3,180 |
+| PP&E, net | 10,383 |
+| Other non-cash assets | 70,815 |
+| **Total assets** | **206,803** |
+| Accounts payable | 9,812 |
+| Accrued and other current liabilities | 21,352 |
+| Debt, short- and long-term | 8,468 |
+| Other liabilities | 9,878 |
+| **Shareholders' equity** | **157,293** |
+| **Total liabilities and equity** | **206,803** |
+
+Source: [NVIDIA FY2026 10-K, Consolidated Balance Sheets](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm). “Other non-cash assets” groups operating-lease assets, goodwill, intangibles, deferred-tax assets, non-marketable equity securities, and other assets. “Other liabilities” groups long-term operating-lease and other long-term liabilities.
 
 ## Historical ratios and operating evidence
 
