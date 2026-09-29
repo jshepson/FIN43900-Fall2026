@@ -5,6 +5,14 @@ the base input set separate and creates a new copy for every model run.
 """
 
 from copy import deepcopy
+from pathlib import Path
+import sys
+
+# The submitted Lab 10 model is retained at the repository root.  Add that
+# location explicitly so this script also works from a fresh GitHub clone.
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+if str(REPOSITORY_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from nvidia_proforma import (
     YEARS, opening, rd_to_revenue, sga_to_gross_profit, inventory_days,

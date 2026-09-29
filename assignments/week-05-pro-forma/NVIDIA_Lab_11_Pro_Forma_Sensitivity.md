@@ -76,8 +76,7 @@ I did not fabricate a partner interaction. Fill in the brackets after the requir
 ## Run instructions
 
 ```bash
-cd assignments/week-05-pro-forma
-python3 nvidia_sensitivity.py
+python3 assignments/week-05-pro-forma/nvidia_sensitivity.py
 ```
 
-The script retains the existing Lab 10 model in `nvidia_proforma.py`, makes a fresh deep copy of the base inputs for every lower/base/higher run, prints the visible sensitivity output and checks, and reruns the restored base at the end.
+The script imports the existing root-level Lab 10 model, makes a fresh deep copy of the base inputs for every lower/base/higher run, prints the visible sensitivity output and checks, and reruns the restored base at the end.
