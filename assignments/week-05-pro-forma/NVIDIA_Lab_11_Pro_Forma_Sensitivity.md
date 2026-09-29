@@ -60,23 +60,3 @@ The selected input range directly affects the ranking because an output span is 
 A sensitivity table is not a forecast probability because it does not assign probabilities to the cases, estimate their likelihood from data, or represent correlations among drivers. It shows conditional outcomes: *if* this input takes a particular value while the rest stay at base, the model produces this result.
 
 The result that surprised me was the scale of the growth-path difference relative to the margin-path difference. The model's five-year compounding means that a 5-percentage-point change in every annual growth assumption produces a much larger FY2031 revenue base, so the impact is much larger than a 1-percentage-point margin change over the stated ranges.
-
-## Partner exchange notes — complete with your actual exchange before submission
-
-I did not fabricate a partner interaction. Fill in the brackets after the required live exchange.
-
-| Exchange | Your note |
-|---|---|
-| Partner's question about my predicted input → statement → output link; my response | [Partner name and actual question/response] |
-| Unit / one-change-at-a-time check my partner performed on my model | [Actual check and any correction] |
-| Changed result and base difference my partner recomputed | [Actual values checked] |
-| Check I performed on my partner's analysis | [Their driver, base/changed output, calculation, and finding] |
-| Partner's question about whether the ranking reflects the chosen ranges; my response | [Actual question/response] |
-
-## Run instructions
-
-```bash
-python3 assignments/week-05-pro-forma/nvidia_sensitivity.py
-```
-
-The script imports the existing root-level Lab 10 model, makes a fresh deep copy of the base inputs for every lower/base/higher run, prints the visible sensitivity output and checks, and reruns the restored base at the end.
