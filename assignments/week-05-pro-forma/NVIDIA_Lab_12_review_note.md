@@ -98,25 +98,35 @@ These are examples only. Use them in the live-review record below only if they a
 ### As presenter
 
 - Questions received and my answers or unresolved gaps:
-  - [Record actual question and answer]
+  - **Selection and evidence:** Why did you choose NVIDIA, and what source best supports your claim that Data Center demand can support your forecast?
+    - I chose NVIDIA because its AI and Data Center growth creates a meaningful valuation question: strong results do not automatically mean the share price is supported. The Q2 FY2027 10-Q reports $89.0 billion in Data Center revenue, up 117% year over year. Q3 revenue guidance and management's preliminary expectation of about 70% FY2028 revenue growth support the near-term forecast; the later years are a judgmental fade.
+  - **Model and valuation:** Can you trace slower Data Center growth from revenue to FCFE and value per share?
+    - Slower growth lowers forecast revenue. At the same gross-margin assumption, gross profit and operating income decrease. Lower income reduces operating cash generation; inventory and receivables can still use cash through working capital. After capex and shareholder returns, FCFE is lower. Discounting that lower FCFE produces a lower equity value per share.
+  - **Sensitivity and interpretation:** Does your main driver rank first because of business economics, or partly because you tested it over a wider range?
+    - Both matter. Revenue growth compounds over five years and changes the revenue base that produces profit and cash flow. However, I tested growth at plus or minus 5 percentage points each year and gross margin at plus or minus 1 percentage point. The result proves growth has the larger effect over those ranges, not that it is always more important than margin.
 - Source or calculation checked with partner, and result:
-  - [Record actual check and result]
+  - We checked NVIDIA's Q2 FY2027 10-Q disclosure that Data Center revenue was $89.0 billion, up 117% year over year. This supports strong current demand but does not prove five years of high growth.
+  - We also checked the sensitivity table: the higher-growth case produced $225.76 per share compared with the $190.81 base value. The valuation conclusion therefore depends heavily on the durability of growth.
 - Feedback received:
-  - Strength: [Record actual feedback]
-  - Improvement: [Record actual feedback]
+  - Strength: The near-term revenue-growth assumption is linked to NVIDIA's 10-Q and management guidance rather than being an unsupported number.
+  - Improvement: Explain more clearly why growth was tested at plus or minus 5 percentage points while gross margin was tested at plus or minus 1 percentage point.
 - Keep, revise, or investigate after feedback:
-  - [Record actual decision and reason]
+  - Keep: I will keep the watch/defer conclusion because the $190.81 base value remains below the $221.70 market reference.
+  - Revise: I will make the sensitivity-range rationale more explicit so the driver ranking is not interpreted as a probability statement.
+  - Investigate: I will investigate the durability and fade rate of Data Center growth, focusing on supply commitments, customer concentration, China exposure, and customer deployment demand.
 - Effect on valuation conclusion or research priority:
-  - [Record whether the live review changed the conclusion and why]
+  - The review did not change my watch/defer valuation conclusion because the base case is still below the market price. It clarified my research priority: determine whether operating evidence supports a more durable Data Center growth path without weaker margins, cash conversion, or reinvestment requirements.
 
 ### As reviewer
 
 - Questions asked about partner's selection/evidence, model/valuation, and sensitivity/interpretation:
-  - [Record actual questions]
+  - **Selection and evidence:** What source specifically supports your most important revenue-growth assumption, and which part of the forecast is your own judgment?
+  - **Model and valuation:** Can you trace slower Data Center growth from revenue to FCFE and value per share?
+  - **Sensitivity and interpretation:** Does your main driver rank first because of business economics, or partly because you tested it over a wider range?
 - Source or calculation checked and result:
-  - [Record actual check and result]
+  - We checked the Q2 FY2027 10-Q disclosure of $89.0 billion in Data Center revenue, up 117% year over year, and discussed that it supports current demand but does not establish five years of high growth. We also checked the sensitivity output, where the $225.76 higher-growth case exceeded the $190.81 base value.
 - Explanation back of partner's conclusion, main driver, and limitation:
-  - [Record actual explanation]
+  - My explanation back was that the conclusion was watch/defer because the base valuation was below the market reference. The main driver was the Data Center revenue-growth path because it affects revenue, operating income, FCFE, and value over five years. The biggest limitation was that the later growth fade was judgment rather than company guidance.
 - Feedback given:
-  - Strength: [Record actual feedback]
-  - Improvement: [Record actual feedback]
+  - Strength: The near-term growth assumption was connected to NVIDIA's 10-Q and management guidance.
+  - Improvement: Make the selected sensitivity ranges more explicit and explain that the ranking depends partly on those ranges.
