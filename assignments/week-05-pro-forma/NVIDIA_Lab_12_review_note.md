@@ -80,6 +80,19 @@ The evidence most likely to change my conclusion is evidence on the durability a
 
 **Example answer:** I would watch Data Center growth, gross-margin guidance and results, customer concentration, supply commitments, and China exposure. Stronger, durable demand with stable margins could justify raising the growth path or margins and increase FCFE and value. Evidence of weaker deployment demand, margin pressure, or supply commitments not converting into cash could lower revenue or margins, increase working-capital needs, reduce FCFE, and reinforce the watch/defer conclusion.
 
+## Example partner review statements
+
+These are examples only. Use them in the live-review record below only if they accurately reflect the partner discussion and evidence check.
+
+- I agree that the $190.81 base value supports watch/defer because it is below the $221.70 market price.
+- The main driver is the Data Center revenue-growth path because it changes revenue, operating income, FCFE, and value over five years.
+- The biggest limitation is that the later growth fade is judgment rather than company guidance.
+- A strength is the use of NVIDIA's 10-Q and management guidance to support near-term assumptions.
+- An improvement would be to explain more clearly why growth was tested at plus or minus 5 percentage points but gross margin at plus or minus 1 percentage point.
+- The Q2 FY2027 10-Q reports $89.0 billion of Data Center revenue, up 117% year over year. This supports strong current demand but does not prove five years of high growth.
+- The sensitivity table shows a $225.76 higher-growth value per share and a $190.81 base value. The conclusion therefore depends heavily on the durability of growth.
+- More evidence about supply commitments, customer concentration, and China exposure would be useful before treating the high-growth case as likely.
+
 ## Live review record — complete during class
 
 ### As presenter
