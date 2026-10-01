@@ -54,6 +54,32 @@ The evidence most likely to change my conclusion is evidence on the durability a
 
 **Example answer:** The $225.76 higher-growth value is conditional on all five annual growth inputs being 5 percentage points above the base case while the other independent assumptions remain at base. The sensitivity assigns no probability to that path and does not capture correlation with margins, working capital, or capital spending. It shows what the model does if that condition holds; it is not a forecast of what will happen.
 
+## Additional presenter and reviewer discussion examples
+
+### Selection and evidence
+
+**Reviewer question:** What source specifically supports your most important revenue-growth assumption, and which part of the forecast is your own judgment?
+
+**Example answer:** My main source is NVIDIA's Q2 FY2027 10-Q, which reports $89.0 billion of Data Center revenue, up 117% year over year. Management also guided Q3 revenue to $108.0 billion plus or minus 2% and discussed about 70% FY2028 growth. That supports the near-term high-growth assumption. The later fade--40%, 25%, 15%, and 8%--is my judgment because management does not provide a five-year forecast.
+
+### Model and valuation
+
+**Reviewer question:** Can you trace slower Data Center growth from revenue to FCFE and value per share?
+
+**Example answer:** Slower growth lowers forecast revenue. At the same gross-margin assumption, gross profit and operating income decrease. Lower income reduces operating cash generation; meanwhile, inventory and receivables can still use cash through working capital. After capex and shareholder returns, FCFE is lower. Discounting that lower FCFE produces a lower equity value per share.
+
+### Sensitivity and interpretation
+
+**Reviewer question:** Does your main driver rank first because of business economics, or partly because you tested it over a wider range?
+
+**Example answer:** Both matter. Revenue growth is economically important because it compounds over five years and changes the revenue base that produces profit and cash flow. But the size of the ranking also depends on my ranges: I tested growth at plus or minus 5 percentage points each year, while margins moved only plus or minus 1 point. Therefore, the sensitivity proves the growth path has the larger effect over those specific ranges; it does not prove it is always more important than margin.
+
+### Evidence that could change the conclusion
+
+**Reviewer question:** What next-quarter evidence would change your conclusion, and what part of the model would it affect?
+
+**Example answer:** I would watch Data Center growth, gross-margin guidance and results, customer concentration, supply commitments, and China exposure. Stronger, durable demand with stable margins could justify raising the growth path or margins and increase FCFE and value. Evidence of weaker deployment demand, margin pressure, or supply commitments not converting into cash could lower revenue or margins, increase working-capital needs, reduce FCFE, and reinforce the watch/defer conclusion.
+
 ## Live review record — complete during class
 
 ### As presenter
