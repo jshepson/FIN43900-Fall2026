@@ -28,7 +28,7 @@ The prediction below was supplied by the student before this rerun. Only WACC wi
 
 | Before/after output | Actual decision effect | Prediction reconciliation | Failure diagnosis/no-change reason | Evidence path |
 |---|---|---|---|---|
-| **COMPLETE AFTER RERUN** |  |  |  | `analysis.py` / saved terminal output |
+| 193.14/share at 10.0% WACC -> 167.82/share at 11.0% WACC (-25.33/share), run 2026-10-16 13:16:44 EDT | Watch/defer strengthens because the higher required return lowers the base value farther below the 221.70 market reference. | Incorrect: the prediction expected an increase, but value decreased. | A higher WACC increases the discount rate applied to the same FCFF and terminal value, reducing their present values. | `analysis.py` / `visible_output.txt` |
 
 ## Material AI-use register
 

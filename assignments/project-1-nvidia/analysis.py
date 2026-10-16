@@ -112,6 +112,8 @@ def main() -> None:
     print(f"Base equity value: ${base['values']['equity_value']:,.1f}m")
     print(f"Decision range: ${cases['Low']['values']['per_share']:.2f}-${cases['High']['values']['per_share']:.2f}; base ${base['values']['per_share']:.2f}")
     print(f"Reverse DCF: a uniform {reverse_growth_shift():+.2%} shift to every explicit revenue-growth rate reaches ${MARKET_PRICE:.2f}.")
+    changed_wacc_value = dcf(base["fcff"], 0.11, 0.03)["per_share"]
+    print(f"Locked changed-input test: WACC 10.00% -> 11.00%; value/share ${base['values']['per_share']:.2f} -> ${changed_wacc_value:.2f} (${changed_wacc_value - base['values']['per_share']:+.2f}).")
     print("\nValidation checks")
     for label, passed, detail in checks(base):
         print(f"{label}: {'PASS' if passed else 'FAIL'} - {detail}")

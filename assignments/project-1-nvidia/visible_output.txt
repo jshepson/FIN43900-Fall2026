@@ -11,6 +11,7 @@ Base enterprise value: $4,640,089.2m
 Base equity value: $4,694,177.2m
 Decision range: $137.31-$280.88; base $193.14
 Reverse DCF: a uniform +4.13% shift to every explicit revenue-growth rate reaches $221.70.
+Locked changed-input test: WACC 10.00% -> 11.00%; value/share $193.14 -> $167.82 ($-25.33).
 
 Validation checks
 Synthetic bridge: PASS - EV 1,000 + cash 100 - claims 280 = equity 820; / 100 = $8.20
