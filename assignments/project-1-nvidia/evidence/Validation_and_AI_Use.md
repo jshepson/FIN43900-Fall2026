@@ -18,17 +18,17 @@ Decision/user: buy-side investment committee; watch/defer NVIDIA common stock. V
 | Peer consistency | P/E is treated as EV or over-relied on | Price and annual GAAP diluted EPS must share currency/basis; one peer cannot be a range | PASS; AMD P/E is equity-value reference only | Qualified/rejected as decision value |
 | AI output | AI decides peer selection | Compare AI suggestion to predeclared peer policy and primary business disclosures | AMD transferability concern accepted; no AI price is used | Qualified |
 
-## Locked Changed-Input Record - student action required before rerun
+## Locked Changed-Input Record
 
-This row is intentionally not backfilled. The assignment requires **your human, AI-off prediction before execution**. Complete the first row yourself, commit/save it, then change only the named input and rerun the model.
+The prediction below was supplied by the student before this rerun. Only WACC will change; the FCFF forecast, cash/securities, debt, terminal growth, and share basis stay fixed.
 
-| Precommit timestamp | Commit/snapshot | Material input | Old -> new value/units | Your expected output direction | Your expected decision effect |
+| Precommit timestamp | Commit/snapshot | Material input | Old -> new value/units | Student's expected output direction | Expected decision effect |
 |---|---|---|---|---|---|
-| **STUDENT MUST COMPLETE BEFORE RUN** |  | Base WACC | 10.0% -> 11.0% |  |  |
+| 2026-10-16 13:11:02 EDT | pending prediction commit | Base WACC | 10.0% -> 11.0% | “I think it will increase.” | If value increases, the watch/defer conclusion would weaken; if it falls, it would strengthen. |
 
 | Before/after output | Actual decision effect | Prediction reconciliation | Failure diagnosis/no-change reason | Evidence path |
 |---|---|---|---|---|
-| **COMPLETE AFTER YOUR RUN** |  |  |  | `analysis.py` / saved terminal output |
+| **COMPLETE AFTER RERUN** |  |  |  | `analysis.py` / saved terminal output |
 
 ## Material AI-use register
 
