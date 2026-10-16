@@ -1,11 +1,15 @@
 Video 1 - Research Evolution
 
-My Edition A recommendation for NVIDIA was watch/defer. At that time, I had evidence of strong Data Center growth but no completed enterprise-value-to-equity bridge, FCFF forecast, or valuation comparison with the market price.
+My Project 1 company is NVIDIA, ticker NVDA. My intended user is a buy-side investment committee. My original Edition A recommendation was watch/defer. I did not recommend buying NVIDIA at that point because strong operating performance alone does not prove that a stock is attractively valued.
 
-My Edition B recommendation remains watch/defer, but it is now based on a five-year pro-forma and FCFF valuation. The final valuation date is September 24, 2026. The low, base, and high cases produce 137.31, 193.14, and 280.88 dollars per share. The recorded market reference is 221.70 dollars per share.
+In Edition A, I used NVIDIA's FY2026 Form 10-K. The main reported facts were strong revenue growth, strong Data Center growth, substantial cash and marketable securities, and debt that needed to be included in an enterprise-value-to-equity-value bridge. I also identified important risks: product transitions, China restrictions, customer concentration, demand durability, and supply or capacity commitments.
 
-The most important change was not the label of the recommendation. It was the evidence supporting it. I defined a separate 24,304 million share valuation proxy rather than using the 24,514 million weighted-average diluted EPS denominator without explanation. I also linked the operating forecast to FCFF, enterprise value, and the equity bridge.
+The important limitation in Edition A was that my valuation was incomplete. I had not yet built a five-year pro-forma, an FCFF valuation, a sensitivity range, or a consistent share-count convention. Therefore, the honest decision was watch/defer while the analysis was unfinished.
 
-The major risk remains whether NVIDIA's Data Center growth, margin, and reinvestment path can persist. The base case has a terminal value equal to 77 percent of enterprise value, so I treat the result as conditional. The AMD P/E output is not averaged with the DCF because it is a one-peer, historically based reference with a different business mix.
+My Edition B recommendation is still watch/defer, but the reason is now more specific. I built a five-year linked pro-forma that drives free cash flow to the firm, then discounts the cash flows to enterprise value and bridges to equity value. I set the final valuation date as September 24, 2026, use U.S. dollars, and use 24,304 million common shares as a consistent valuation-date share proxy. I separately disclose that this is different from the 24,514 million weighted-average diluted EPS denominator reported for FY2026.
 
-AI helped organize and challenge the work. I retained or rejected conclusions only after checking the model logic and source record. My committee action remains watch/defer pending future filing evidence.
+The final model gives a low case of 137.31 dollars per share, a base case of 193.14 dollars, and a high case of 280.88 dollars. The market reference is 221.70 dollars. Because the market reference is above my base case, and because the high case requires more favorable growth, margin, WACC, and terminal-growth assumptions, I still recommend watch/defer.
+
+One important research result was the peer work. AMD produced a very high historical P/E reference, but I did not average it into the DCF. AMD has a different revenue mix and the result comes from only one qualified peer. I treat it as a challenge to investigate, not a decision value.
+
+AI helped me organize the analysis and identify challenges, but it did not decide the recommendation. I checked the model structure, documented the peer-policy limitation, and retained the conditional watch/defer judgment. I would revisit the decision after the next filing if reported Data Center growth, margins, cash conversion, or capital intensity materially changes.
