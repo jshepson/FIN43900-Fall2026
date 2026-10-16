@@ -1,0 +1,24 @@
+NVIDIA Project 1 - FCFF Valuation (USD millions except per-share data)
+Valuation date: 2026-09-24; market reference: $221.70; shares: 24,304m
+
+Causal cases
+Low: growth shift -5.0%; margin shift -1.0%; WACC 10.75%; g 2.50%; value/share $137.31; TV/EV 72.1%
+Base: growth shift +0.0%; margin shift +0.0%; WACC 10.00%; g 3.00%; value/share $193.14; TV/EV 77.0%
+High: growth shift +5.0%; margin shift +1.0%; WACC 9.25%; g 3.50%; value/share $280.88; TV/EV 81.7%
+
+Base FCFF FY2027E-FY2031E: $164,628.8, $240,223.5, $306,970.2, $358,824.1, $391,109.0
+Base enterprise value: $4,640,089.2m
+Base equity value: $4,694,177.2m
+Decision range: $137.31-$280.88; base $193.14
+Reverse DCF: a uniform +4.13% shift to every explicit revenue-growth rate reaches $221.70.
+
+Validation checks
+Synthetic bridge: PASS - EV 1,000 + cash 100 - claims 280 = equity 820; / 100 = $8.20
+Base-year balance-sheet reconciliation: PASS - FY2026 assets and liabilities plus equity both equal $206,803m in the source model.
+Forecast articulation: PASS - maximum balance gap $0.0m
+Cash-floor check: PASS - minimum cash headroom $117,283.8m
+Bridge arithmetic: PASS - equity value equals EV + cash/securities - debt
+WACC monotonicity: PASS - 9% $226.98 > 11% $167.82
+Terminal-growth monotonicity: PASS - 4% $219.31 > 2% $173.52
+
+Committee action: WATCH/DEFER. The market reference exceeds the base DCF; the high case is conditional and the one-peer P/E reference is not used as a decision value.

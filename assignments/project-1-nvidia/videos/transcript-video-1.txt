@@ -1,0 +1,11 @@
+Video 1 - Research Evolution
+
+My Edition A recommendation for NVIDIA was watch/defer. At that time, I had evidence of strong Data Center growth but no completed enterprise-value-to-equity bridge, FCFF forecast, or valuation comparison with the market price.
+
+My Edition B recommendation remains watch/defer, but it is now based on a five-year pro-forma and FCFF valuation. The final valuation date is September 24, 2026. The low, base, and high cases produce 137.31, 193.14, and 280.88 dollars per share. The recorded market reference is 221.70 dollars per share.
+
+The most important change was not the label of the recommendation. It was the evidence supporting it. I defined a separate 24,304 million share valuation proxy rather than using the 24,514 million weighted-average diluted EPS denominator without explanation. I also linked the operating forecast to FCFF, enterprise value, and the equity bridge.
+
+The major risk remains whether NVIDIA's Data Center growth, margin, and reinvestment path can persist. The base case has a terminal value equal to 77 percent of enterprise value, so I treat the result as conditional. The AMD P/E output is not averaged with the DCF because it is a one-peer, historically based reference with a different business mix.
+
+AI helped organize and challenge the work. I retained or rejected conclusions only after checking the model logic and source record. My committee action remains watch/defer pending future filing evidence.

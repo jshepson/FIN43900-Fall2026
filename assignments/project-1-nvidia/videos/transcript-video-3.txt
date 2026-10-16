@@ -1,0 +1,11 @@
+Video 3 - Committee Defense
+
+My recommendation is watch/defer NVIDIA and do not initiate at the September 24, 2026 market reference of 221.70 dollars per share. My FCFF valuation range is 137.31 to 280.88 dollars per share, with a base case of 193.14 dollars.
+
+The market reference is above my base value. The high case exceeds the market price, but it requires a stronger growth path, higher margins, lower WACC, and higher terminal growth. I do not treat that conditional outcome as enough evidence to initiate a position.
+
+The main operating driver is durability of Data Center demand. The low case combines slower revenue growth and lower margin with a higher discount rate and lower terminal growth. The model still articulates, but value falls to 137.31 dollars per share.
+
+The largest limitation is that terminal value is 77 percent of base enterprise value. I also treat the AMD historical P/E as a qualified reference rather than averaging it into the DCF because the peer has different revenue mix and market expectations.
+
+I would reconsider initiation if two reported quarters support the modeled demand, margin, and cash-conversion path and the share price offers a margin of safety to my base value. I would move to do-not-initiate if growth, margins, cash conversion, or the enterprise-to-equity bridge weaken materially. My committee ask is to keep NVIDIA on watch/defer and refresh the model after the next filing.

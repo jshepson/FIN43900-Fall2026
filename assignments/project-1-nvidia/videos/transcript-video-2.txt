@@ -1,0 +1,11 @@
+Video 2 - Code and Validation
+
+This is my final NVIDIA valuation application. I run analysis.py from the repository root. It uses the linked five-year three-statement pro-forma and calculates FCFF as EBIT times one minus tax, plus depreciation and amortization, minus capital spending and the change in operating net working capital.
+
+The program then discounts five annual FCFF values using WACC, calculates a Gordon-growth terminal value, and converts enterprise value to equity value by adding 62,556 million dollars of cash and marketable securities and subtracting 8,468 million dollars of debt. It divides by 24,304 million shares.
+
+The base output is 193.14 dollars per share. The low case changes growth, margin, WACC, and terminal growth together for an economic downside and produces 137.31 dollars. The high case produces 280.88 dollars, but it requires stronger growth and margin, a lower WACC, and a higher terminal growth rate.
+
+My validation checks include a known-answer enterprise-to-equity bridge, base-year reconciliation, forecast balance-sheet articulation, calculated cash, bridge arithmetic, and monotonicity. Lower WACC increases value: the code shows 226.98 dollars at 9 percent versus 167.82 dollars at 11 percent. Higher terminal growth also increases value.
+
+The highest-risk limitation is terminal value, which is 77 percent of base enterprise value. I do not hide that concentration. Before the locked changed-input test, I will write my own AI-off prediction, save it, change only WACC from 10 to 11 percent, rerun the model, and record the actual effect.
