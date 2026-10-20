@@ -55,6 +55,10 @@ It calculates the reserve minimum rather than typing it in: 4 × $0.75m ÷ $100m
 
 Acme is correctly aggregated: candidate B has 5% Acme bonds plus 4% Acme stock, or 9% in one company.
 
+### Lab 14 benchmark check: candidate E
+
+I added Meridian's S4 benchmark as candidate E: 40% Investment-grade bond fund and 60% Global equity index fund. Running `python mandate.py` reports a **0.0% reserve-eligible weight**, which fails the 3.0% reserve rule. The client's comparison benchmark therefore is not an adoptable mandate-compliant portfolio without a reserve allocation.
+
 ### Required probe
 
 I temporarily changed candidate A's Cash weight to -2% and its Global equity index fund weight to 64%, then reran the program. The lowest weight was -2.0 and failed long-only; every other rule passed, including the 10.0% reserve-eligible amount. I then restored the original 2% Cash and 60% Global equity index fund inputs.
