@@ -4,7 +4,10 @@ Run: python portfolio.py
 All returns, volatilities, and weights are decimal values (0.035 means 3.5%).
 """
 
+import csv
+from itertools import product
 from math import sqrt
+from statistics import correlation, mean, stdev
 
 
 # Editable inputs
@@ -107,6 +110,118 @@ def portfolio_volatility(weights: dict, covariances: dict) -> float:
 def reserve_eligible_weight(weights: dict, reserve_eligible: set) -> float:
     """Calculate the combined weight of reserve-eligible sleeves."""
     return sum(weights[name] for name in reserve_eligible)
+
+
+def find_lowest_risk_mix(
+    sleeves: dict,
+    correlations: dict,
+    objective_return: float,
+    reserve_eligible: set,
+    reserve_minimum: float = 0.03,
+    step: float = 0.05,
+) -> dict | None:
+    """Return the lowest-volatility feasible long-only mix on a fixed grid.
+
+    The returned dictionary contains weights, expected_return, volatility, and
+    reserve_weight.  ``None`` means no grid portfolio satisfies both rules.
+    """
+    validate_correlations(sleeves, correlations)
+    if not sleeves:
+        raise ValueError("At least one sleeve is required.")
+    if not 0 < step <= 1 or round(1 / step) * step != 1:
+        raise ValueError("Step must divide 100% exactly (for example, 0.05).")
+    if not reserve_eligible <= set(sleeves):
+        raise ValueError("Reserve-eligible sleeves must be in the sleeve universe.")
+
+    units = round(1 / step)
+    names = list(sleeves)
+    covariances = covariance_matrix(sleeves, correlations)
+    best = None
+    # A grid point is an integer number of step-sized units.  The last sleeve
+    # receives the remainder, which guarantees every candidate sums to 100%.
+    for partial in product(range(units + 1), repeat=len(names) - 1):
+        remainder = units - sum(partial)
+        if remainder < 0:
+            continue
+        weights = {
+            name: unit * step
+            for name, unit in zip(names, (*partial, remainder))
+        }
+        expected_return = portfolio_return(weights, sleeves)
+        reserve_weight = reserve_eligible_weight(weights, reserve_eligible)
+        if expected_return + 1e-12 < objective_return or reserve_weight + 1e-12 < reserve_minimum:
+            continue
+        volatility = portfolio_volatility(weights, covariances)
+        candidate = {
+            "weights": weights,
+            "expected_return": expected_return,
+            "volatility": volatility,
+            "reserve_weight": reserve_weight,
+        }
+        if best is None or volatility < best["volatility"] - 1e-12:
+            best = candidate
+    return best
+
+
+def estimate_from_prices(source, last_36: bool = False) -> tuple[dict, dict]:
+    """Estimate annualized sleeve inputs from a date-first monthly-price CSV.
+
+    Returns are simple monthly returns.  Means are annualized by multiplying by
+    12, sample standard deviations by multiplying by sqrt(12), and correlations
+    are calculated from the same monthly-return observations.  Set ``last_36``
+    to use only the latest 36 return observations.
+    """
+    close_after_read = False
+    if isinstance(source, (str, bytes)):
+        source = open(source, newline="", encoding="utf-8")
+        close_after_read = True
+    try:
+        rows = list(csv.reader(source))
+    finally:
+        if close_after_read:
+            source.close()
+    if len(rows) < 3 or len(rows[0]) < 2:
+        raise ValueError("CSV needs a date column, one or more ticker columns, and at least three rows.")
+
+    names = [name.strip() for name in rows[0][1:]]
+    if not all(names) or len(set(names)) != len(names):
+        raise ValueError("Ticker column names must be present and unique.")
+    prices = {name: [] for name in names}
+    for row_number, row in enumerate(rows[1:], start=2):
+        if len(row) != len(names) + 1:
+            raise ValueError(f"Row {row_number} does not have the same number of columns as the header.")
+        try:
+            values = [float(value) for value in row[1:]]
+        except ValueError as error:
+            raise ValueError(f"Row {row_number} contains a non-numeric price.") from error
+        if any(value <= 0 for value in values):
+            raise ValueError(f"Row {row_number} contains a price that is not positive.")
+        for name, value in zip(names, values):
+            prices[name].append(value)
+
+    returns = {
+        name: [(current / previous) - 1 for previous, current in zip(values, values[1:])]
+        for name, values in prices.items()
+    }
+    if last_36:
+        returns = {name: values[-36:] for name, values in returns.items()}
+    observations = len(next(iter(returns.values())))
+    if observations < 2:
+        raise ValueError("At least three monthly prices (two monthly returns) are required.")
+
+    sleeves = {
+        name: {"return": mean(values) * 12, "volatility": stdev(values) * sqrt(12)}
+        for name, values in returns.items()
+    }
+    correlations = {
+        left: {
+            right: 1.0 if left == right else correlation(returns[left], returns[right])
+            for right in names
+        }
+        for left in names
+    }
+    validate_correlations(sleeves, correlations)
+    return sleeves, correlations
 
 
 def print_portfolio(name: str, weights: dict, sleeves: dict, covariances: dict) -> None:
