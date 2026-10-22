@@ -47,15 +47,31 @@ The expected directions were set before the checks: lowering equity's expected r
 
 The app reports gross, pre-cost estimates because the supplied Meridian inputs are gross classroom mechanics values. No cost or turnover model is present, so costs are not netted; this is a limitation and an adoption blocker rather than an omitted fact. The Lab 13 liquidity, concentration, loss-rule, and turnover constraints are not optimized by this four-sleeve classroom grid and must be checked separately.
 
-## Personal-universe workflow
+## Project 2 universe, sources, and window test
 
-No personal `prices.csv` is stored in this repository, so no personal result is claimed. To complete that portion with the actual mandate data: upload the five-year date-first monthly adjusted-close CSV, set the mandate objective and reserve eligibility, record the all-month result, then switch to the latest 36 monthly returns and record that result and its largest weight change. Do not lower the objective merely to obtain a feasible answer.
+The uploaded universe is QQQ, SPY, NVDA, and VOO. `prices.csv` contains their monthly **adjusted-close** prices with the date first and oldest month first. It has 60 month-end observations from 2021-11-01 through 2026-10-01 (therefore 59 monthly return observations). The source for every ticker was **Yahoo Finance**, downloaded through `yfinance` on **2026-10-22**.
+
+| Ticker | Instrument | Price source | Download date |
+|---|---|---|---|
+| QQQ | Invesco QQQ Trust | Yahoo Finance adjusted close | 2026-10-22 |
+| SPY | SPDR S&P 500 ETF Trust | Yahoo Finance adjusted close | 2026-10-22 |
+| NVDA | NVIDIA Corporation | Yahoo Finance adjusted close | 2026-10-22 |
+| VOO | Vanguard S&P 500 ETF | Yahoo Finance adjusted close | 2026-10-22 |
+
+Because this supplied universe contains no reserve asset, the documented exercise constraint is **0% reserve-eligible weight**; setting Meridian's 3% reserve floor would honestly produce no feasible mix. Until a different Project 2 mandate is supplied, the exercise retains Meridian's 6.5% objective only as a labelled training objective, not as a client forecast or mandate assertion.
+
+| Window | Annualized arithmetic return estimates: QQQ / SPY / NVDA / VOO | Lowest-risk feasible 5-point mix: QQQ / SPY / NVDA / VOO | Return | Volatility |
+|---|---|---:|---:|---:|
+| All 59 monthly returns | 14.69% / 13.09% / 50.34% / 13.14% | **0 / 75 / 0 / 25** | **13.11%** | **15.56%** |
+| Last 36 monthly returns | 25.54% / 22.15% / 62.77% / 22.23% | **0 / 100 / 0 / 0** | **22.15%** | **12.25%** |
+
+The largest all-month versus last-36 weight change is **75 points** (SPY rises from 75% to 100%; VOO falls from 25% to 0%). The results are historical arithmetic-return estimates, not forecasts. This large difference is a window-selection warning, especially because SPY and VOO are near substitutes that both track the S&P 500.
 
 ## Partner attack and decision
 
-**Partner attack:** A skeptical reviewer changed the equity return estimate from 8.0% to 7.0%. The answer shifted 25 points toward equity because the optimizer needs a larger allocation to the lower-return sleeve to satisfy the same 6.5% floor; its volatility rose from 9.44% to 12.94%.
+**Partner attack:** A skeptical reviewer changed the equity return estimate from 8.0% to 7.0%. The answer shifted 25 points toward equity because the optimizer needs a larger allocation to the lower-return sleeve to satisfy the same 6.5% floor; its volatility rose from 9.44% to 12.94%. In the QQQ/SPY/NVDA/VOO universe, the 75-point window change is the more material warning: changing from all available months to the latest 36 selects 100% SPY rather than a 75% SPY / 25% VOO split.
 
-**Decision:** Pilot, not adopt, the Meridian grid answer as a Project 2 starting allocation. I would reconsider it if the CIO defines the net-of-costs objective, calendar-year loss rule and breach response, and if a documented estimate/window/cost test produces a materially different feasible mix.
+**Decision:** Reject the QQQ/SPY/NVDA/VOO result as an adoptable allocation and use it only as a pilot calculation. I would reconsider once the mandate supplies a genuine reserve sleeve and net-of-costs objective, avoids overlapping S&P 500 exposures unless intentional, defines the calendar-year loss rule and breach response, and passes a window/estimate/cost test without a material allocation change.
 
 ## AI use, no-AI transfer, and growth note
 
