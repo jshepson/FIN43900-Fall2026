@@ -22,16 +22,15 @@ streamlit run app.py
 
 ```mermaid
 flowchart TD
-    A[Meridian inputs or monthly prices.csv] --> B[Validate correlations or parse prices]
-    B --> C[Estimate annual return, volatility, correlation]
-    C --> D[Set objective and reserve-eligible sleeves]
-    D --> E[Enumerate long-only 5-point mixes]
-    E --> F{Return and reserve rule met?}
-    F -- No --> E
-    F -- Yes --> G[Calculate volatility]
-    G --> H[Keep lowest-risk feasible mix]
-    H --> I[Display current and as-loaded answers]
-    I --> J[Report largest weight change]
+    A[Inputs] --> B[Validate and estimate]
+    B --> C[Set objective and reserve rule]
+    C --> D[Search five point mixes]
+    D --> E{Meets rules}
+    E -->|no| D
+    E -->|yes| F[Calculate risk]
+    F --> G[Keep lowest risk mix]
+    G --> H[Show current and loaded results]
+    H --> I[Show largest weight change]
 ```
 
 ## Validation and stability tests
