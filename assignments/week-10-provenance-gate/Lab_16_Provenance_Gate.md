@@ -59,30 +59,33 @@ instead of row 4 would incorrectly report AAA's as-of change as +2.97%.
 Lab 15's current Project 2 universe is QQQ, SPY, NVDA, and VOO. The provided
 price file is sourced from Yahoo Finance and does not contain vintage/release
 dates, so it cannot itself establish what was known on an earlier decision date.
-For the ALFRED exercise, select a monthly series that has a documented connection
-to the portfolio decision (for example, CPI as an inflation/objective context
-input). Do not represent it as a security return or as a replacement for the
-Project 2 price data.
+For the ALFRED exercise, I selected **CPIAUCSL**: the seasonally adjusted,
+monthly U.S. Consumer Price Index (1982–1984 = 100). It is an inflation/objective
+context input, not a security return or a replacement for the Project 2 price
+data. The series is published in ALFRED's Consumer Price Index release and
+sourced from the U.S. Bureau of Labor Statistics.
 
 Before Thursday:
 
 1. Read the assigned ALFRED Help headings: *What is ALFRED?*, *What is a Release
    and what are Release Dates?*, *How are Release Dates determined?*, and *How
    does ALFRED verify vintage data?*
-2. Choose and record one monthly ALFRED series ID, its release/source, units, and
-   why it is relevant to the decision.
-3. Export/download the series vintage observations from ALFRED and enter them in
-   `alfred_series_table.csv`. Preserve the raw download separately if course
-   instructions permit it; do not overwrite its dates with today’s date.
-4. Complete the table's `published_on` field from the release/vintage metadata.
-   If the date is unavailable, write `UNKNOWN` and quarantine that row rather
-   than guessing.
-5. State an intended historical decision date before filtering, then bring this
-   file, the raw source link/download, this Lab 16 filter, and the Lab 15
-   universe to class.
+2. `alfred_series_table.csv` contains 52 monthly CPIAUCSL observations for the
+   Lab 15 price-window period, retrieved from the ALFRED snapshot fixed at
+   **31 March 2026**. The source URL is preserved on every row.
+3. This is an as-of snapshot, so it proves what was in ALFRED by the cutoff but
+   does **not** invent an original publication day for each observation. The
+   source snapshot has a blank October 2025 value; row 48 is explicitly
+   quarantined rather than filled or deleted.
+4. For a row-level *publication-date* filter, download ALFRED's “Observations by
+   Real-Time Period” export and retain its real-time-start and real-time-end
+   fields. Do not substitute the snapshot date for an original release date.
+5. Bring this table, its source URL, the Lab 16 filter, and the Lab 15 universe
+   to class.
 
-The table intentionally starts empty: entering real ALFRED observations requires
-the specific series and vintage evidence you select and download.
+ALFRED states that a vintage date retrieves values actually available at that
+historical date. Its release-date documentation also explains that a release date
+is when the source first makes the data available; those are distinct concepts.
 
 ## Brightspace checkout draft
 
