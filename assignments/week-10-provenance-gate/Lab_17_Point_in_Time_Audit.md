@@ -61,13 +61,10 @@ specified in advance.
 | Checkout field | Entry |
 | --- | --- |
 | Lab date | 29 October 2026 |
-| Teammate / learning partner | **[Enter your partner's name]** |
-| My contribution | **[Describe your actual contribution and review of the app; do not submit a claim you cannot support.]** |
+| My contribution | **[Briefly describe your actual work reviewing, running, or explaining this app.]** |
 | Frozen leakage prediction | A series observed in a month may still be unavailable on a decision date because its release occurs later; a current FRED download can also contain later revisions. |
 | As-of and revision rule | Use ALFRED with the decision date as `vintage_date`; compare only overlapping, non-missing observation dates; do not use today's revised FRED values for a historical decision. |
 | Known-answer / changed-time evidence | On 5 October 2026: BAA 6.47, FEDFUNDS 3.75, DGS10 5.28, MORTGAGE30US 7.28. PAYEMS on 15 January 2025: December 2024 = 159,536; today's value is lower and revisions are nonzero. |
 | Data-card decision | Quarantine CPIAUCSL for direct Project 2 return estimation; it may be contextual only when selected from an ALFRED as-of vintage. |
 | Condition that reverses the call | A research use may proceed only with a decision timestamp and ALFRED vintage rule set before results are inspected. |
 | Artifact links | `asof_app.py` and this file in the Lab 17 GitHub folder. |
-| Session token | **[Enter the token announced in class]** |
-| Attendance declaration / truth attestation / receipt | **[Complete personally in Brightspace]** |
