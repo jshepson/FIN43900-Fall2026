@@ -61,7 +61,7 @@ specified in advance.
 | Checkout field | Entry |
 | --- | --- |
 | Lab date | 29 October 2026 |
-| My contribution | **[Briefly describe your actual work reviewing, running, or explaining this app.]** |
+| My contribution | I ran the app, checked the four required historical values and the PAYEMS revision probe, and explained how the ALFRED vintage-date download prevents look-ahead bias. I reviewed the CPIAUCSL data card and supported the decision to quarantine it for direct return estimation. |
 | Frozen leakage prediction | A series observed in a month may still be unavailable on a decision date because its release occurs later; a current FRED download can also contain later revisions. |
 | As-of and revision rule | Use ALFRED with the decision date as `vintage_date`; compare only overlapping, non-missing observation dates; do not use today's revised FRED values for a historical decision. |
 | Known-answer / changed-time evidence | On 5 October 2026: BAA 6.47, FEDFUNDS 3.75, DGS10 5.28, MORTGAGE30US 7.28. PAYEMS on 15 January 2025: December 2024 = 159,536; today's value is lower and revisions are nonzero. |
