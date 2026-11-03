@@ -5,6 +5,14 @@ This submission turns a fixed Buffett-style 10-K review into the repo-scoped
 The script computes all figures from SEC EDGAR; the Markdown memo is a limited,
 price-free business judgment based only on the printed results.
 
+## Submission links
+
+- [`SKILL.md`](../../.codex/skills/buffett-edgar/SKILL.md) — reusable Codex skill instructions.
+- [`analyze_company.py`](../../.codex/skills/buffett-edgar/scripts/analyze_company.py) — EDGAR computation script.
+- [`app.py`](app.py) — Streamlit application.
+- [`COST_buffett_memo.md`](COST_buffett_memo.md) — short model judgment using only computed facts.
+- [`COST_run_evidence.md`](COST_run_evidence.md) — rendered chart, computed table, checks, memo, and audit evidence.
+
 ## Run
 
 Use a truthful SEC User-Agent that identifies you and provides a contact email:
