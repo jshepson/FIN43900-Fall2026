@@ -69,8 +69,8 @@ if result:
         st.json([{ "fiscal_year_end": row["fiscal_year_end"], **row["tags"] } for row in result["rows"]])
     st.subheader("Buffett checks")
     st.table(pd.DataFrame(result["checks"].items(), columns=["Check", "Result"]))
-    memo_path = Path(__file__).with_name("COST_buffett_memo.md")
-    default_memo = memo_path.read_text(encoding="utf-8") if result["ticker"] == "COST" and memo_path.exists() else "# Buffett memo\n\nWrite a short, price-free memo using only this table."
+    memo_path = Path(__file__).with_name(f"{result['ticker']}_buffett_memo.md")
+    default_memo = memo_path.read_text(encoding="utf-8") if memo_path.exists() else "# Buffett memo\n\nWrite a short, price-free memo using only this table."
     st.subheader("Buffett memo")
     memo = st.text_area("Memo markdown", default_memo, height=220)
     st.markdown(memo)

@@ -12,6 +12,8 @@ price-free business judgment based only on the printed results.
 - [`app.py`](app.py) — Streamlit application.
 - [`COST_buffett_memo.md`](COST_buffett_memo.md) — short model judgment using only computed facts.
 - [`COST_run_evidence.md`](COST_run_evidence.md) — rendered chart, computed table, checks, memo, and audit evidence.
+- [`BRO_run_evidence.md`](BRO_run_evidence.md) — Brown & Brown run evidence, including its preserved missing-equity limitation.
+- [`NVDA_run_evidence.md`](NVDA_run_evidence.md) — NVIDIA run evidence.
 
 ## Run
 
