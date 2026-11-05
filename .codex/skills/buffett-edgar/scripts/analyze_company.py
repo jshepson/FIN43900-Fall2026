@@ -20,8 +20,12 @@ FIELDS = {
     "operating_cash_flow": ["NetCashProvidedByUsedInOperatingActivities"],
     "capital_spending": ["PaymentsToAcquirePropertyPlantAndEquipment", "PaymentsToAcquireProductiveAssets"],
     "equity": ["StockholdersEquity"],
+    "liabilities": ["Liabilities"],
+    "assets_current": ["AssetsCurrent"],
+    "liabilities_current": ["LiabilitiesCurrent"],
 }
-DISPLAY = {"revenue": "Revenue", "net_income": "Net income", "operating_cash_flow": "Operating cash flow", "capital_spending": "Capital spending", "equity": "Equity"}
+DISPLAY = {"revenue": "Revenue", "net_income": "Net income", "operating_cash_flow": "Operating cash flow", "capital_spending": "Capital spending", "equity": "Equity", "liabilities": "Liabilities", "assets_current": "AssetsCurrent", "liabilities_current": "LiabilitiesCurrent"}
+BALANCE_SHEET_FIELDS = {"equity", "liabilities", "assets_current", "liabilities_current"}
 
 
 def download_json(url: str, user_agent: str) -> dict:
@@ -89,6 +93,10 @@ def format_percent(value: float | None) -> str:
     return "not known" if value is None else f"{value * 100:.1f}%"
 
 
+def format_ratio(value: float | None) -> str:
+    return "not known" if value is None else f"{value:.2f}"
+
+
 def five_fiscal_year_ends(company_facts: dict) -> list[str]:
     return sorted(annual_candidates(company_facts, "NetIncomeLoss", flow=True))[-5:]
 
@@ -98,13 +106,17 @@ def build_rows(company_facts: dict) -> list[dict]:
     for end in five_fiscal_year_ends(company_facts):
         row: dict = {"fiscal_year_end": end, "tags": {}}
         for field, tags in FIELDS.items():
-            fact, tag = select_fact(company_facts, tags, end, flow=field != "equity")
+            fact, tag = select_fact(company_facts, tags, end, flow=field not in BALANCE_SHEET_FIELDS)
             row[field] = value_in_millions(fact)
             row["tags"][field] = tag or "not found"
         equity, net_income = row["equity"], row["net_income"]
         row["roe"] = net_income / equity if net_income is not None and equity is not None and equity > 0 else None
         ocf, capex = row["operating_cash_flow"], row["capital_spending"]
         row["owner_earnings"] = ocf - capex if ocf is not None and capex is not None else None
+        assets_current, liabilities_current = row["assets_current"], row["liabilities_current"]
+        row["current_ratio"] = assets_current / liabilities_current if assets_current is not None and liabilities_current is not None and liabilities_current > 0 else None
+        liabilities = row["liabilities"]
+        row["liabilities_to_equity"] = liabilities / equity if liabilities is not None and equity is not None and equity > 0 else None
         rows.append(row)
     return rows
 
@@ -122,10 +134,10 @@ def check_results(rows: list[dict]) -> dict[str, str]:
 def print_report(ticker: str, cik: int, rows: list[dict], checks: dict[str, str]) -> None:
     print(f"{ticker.upper()} — SEC EDGAR 10-K facts (USD millions); CIK {cik:010d}")
     print("Latest 10-K filing wins when the same fiscal-year period appears more than once.\n")
-    print("FY end | Revenue | Net income | Operating cash flow | Capital spending | Equity | ROE | Owner earnings")
-    print("--- | --- | --- | --- | --- | --- | --- | ---")
+    print("FY end | Revenue | Net income | Operating cash flow | Capital spending | Equity | Liabilities | Assets current | Liabilities current | ROE | Current ratio | Liabilities / equity | Owner earnings")
+    print("--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---")
     for row in rows:
-        print(" | ".join([row["fiscal_year_end"], format_value(row["revenue"]), format_value(row["net_income"]), format_value(row["operating_cash_flow"]), format_value(row["capital_spending"]), format_value(row["equity"]), format_percent(row["roe"]), format_value(row["owner_earnings"])]))
+        print(" | ".join([row["fiscal_year_end"], format_value(row["revenue"]), format_value(row["net_income"]), format_value(row["operating_cash_flow"]), format_value(row["capital_spending"]), format_value(row["equity"]), format_value(row["liabilities"]), format_value(row["assets_current"]), format_value(row["liabilities_current"]), format_percent(row["roe"]), format_ratio(row["current_ratio"]), format_ratio(row["liabilities_to_equity"]), format_value(row["owner_earnings"])]))
         print("  tags: " + "; ".join(f"{DISPLAY[field]}={row['tags'][field]}" for field in FIELDS))
     print("\nBuffett checks")
     for name, result in checks.items():
