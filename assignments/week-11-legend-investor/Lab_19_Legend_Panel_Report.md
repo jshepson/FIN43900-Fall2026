@@ -59,8 +59,8 @@ The audit was also checked by inserting `40.0%` into a memo; the app flagged it 
 - [Shared SEC EDGAR analyzer](../../.codex/skills/buffett-edgar/scripts/analyze_company.py)
 - [Graham skill](../../.codex/skills/graham-edgar/SKILL.md) and [check code](../../.codex/skills/graham-edgar/scripts/graham_checks.py)
 - [Burry skill](../../.codex/skills/burry-edgar/SKILL.md) and [check code](../../.codex/skills/burry-edgar/scripts/burry_checks.py)
-- [Panel Streamlit app](app.py)
-- [COST Buffett memo](COST_buffett_memo.md), [Graham memo](COST_graham_memo.md), and [Burry memo](COST_burry_memo.md)
-- [NVDA Buffett memo](NVDA_buffett_memo.md), [Graham memo](NVDA_graham_memo.md), and [Burry memo](NVDA_burry_memo.md)
+- [Lab 19 panel Streamlit app](Lab_19_Legend_Panel_App.py)
+- [Lab 19 COST Buffett memo](Lab_19_COST_Buffett_Memo.md), [Graham memo](Lab_19_COST_Graham_Memo.md), and [Burry memo](Lab_19_COST_Burry_Memo.md)
+- [Lab 19 NVDA Buffett memo](Lab_19_NVDA_Buffett_Memo.md), [Graham memo](Lab_19_NVDA_Graham_Memo.md), and [Burry memo](Lab_19_NVDA_Burry_Memo.md)
 
 **Sources:** [SEC ticker-to-CIK file](https://www.sec.gov/files/company_tickers.json), SEC company facts for [COST](https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json) and [NVDA](https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json), and the [FAskills repository](https://github.com/CinderZhang/FAskills).
