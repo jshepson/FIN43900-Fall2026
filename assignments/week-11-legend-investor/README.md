@@ -16,6 +16,7 @@ price-free business judgment based only on the printed results.
 - [`NVDA_run_evidence.md`](NVDA_run_evidence.md) — NVIDIA run evidence.
 - [`Lab_19_Legend_Panel.md`](Lab_19_Legend_Panel.md) — COST known-answer panel, NVDA panel, threshold probe, bull/bear, decision, and live-run evidence.
 - [`graham-edgar`](../../.codex/skills/graham-edgar/SKILL.md) and [`burry-edgar`](../../.codex/skills/burry-edgar/SKILL.md) — the new Lab 19 skills.
+- [`lab-19/`](lab-19/README.md) — one-stop Lab 19 GitHub submission index.
 
 ## Run
 
