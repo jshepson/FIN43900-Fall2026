@@ -1,9 +1,9 @@
 item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
 Research-Evolution.pdf,yes,,MISSING — Edition A/B research evolution PDF,,,,,Must not be recreated after AI use; locate original unchanged Edition A and prepare final PDF.
-Repository,yes,https://github.com/jshepson/FIN43900-Fall2026,FIN 43900 Project 2 — Meridian,2026-11-17,,,Confirm instructional-team access after push.
-Visible executed output,yes,assignments/project-2-meridian/visible_output.json,Meridian historical-window output,2026-10-01,,,Generated-equivalent output checked against `analysis.py` locally on 2026-11-17.
-Decision memo or deck,yes,assignments/project-2-meridian/docs/decision-memo.md,Meridian CIO Decision Memo,2026-11-17,,,Markdown ready; PDF required for final Brightspace package.
-Validation-and-AI-Use.pdf,yes,assignments/project-2-meridian/docs/validation-and-ai-use.md,Validation and AI Use,2026-11-17,,,Markdown ready; PDF and locked changed-input record remain required.
+Repository,yes,https://github.com/jshepson/FIN43900-Fall2026,FIN 43900 Project 2 — Meridian,2026-11-17,,,d56e7a6,Confirm instructional-team access after push.
+Visible executed output,yes,assignments/project-2-meridian/visible_output.json,Meridian historical-window output,2026-10-01,,,d56e7a6,Generated-equivalent output checked against `analysis.py` locally on 2026-11-17.
+Decision memo or deck,yes,assignments/project-2-meridian/docs/decision-memo.md,Meridian CIO Decision Memo,2026-11-17,,,d56e7a6,Markdown ready; PDF required for final Brightspace package.
+Validation-and-AI-Use.pdf,yes,assignments/project-2-meridian/docs/validation-and-ai-use.md,Validation and AI Use,2026-11-17,,,d56e7a6,Markdown ready; PDF and locked changed-input record remain required.
 Video 1,yes,,MISSING — Research Evolution,maximum 3:00,,,,Record/upload; unlisted or public and test logged out.
 Transcript Video 1,yes,,MISSING — Video 1 transcript,,,,Create after recording and correct material terms/numbers.
 Video 2,yes,,MISSING — Code and Validation,maximum 5:00,,,,Record/upload; show cold run and changed-input validation.

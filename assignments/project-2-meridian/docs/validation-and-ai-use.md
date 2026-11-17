@@ -2,7 +2,7 @@
 
 ## Decision, version, and as-of boundary
 
-Decision/user: Meridian Foundation CIO; reject the QQQ/SPY/NVDA/VOO result as an adoptable allocation and retain it only as a pilot calculation. Run `python3 assignments/project-2-meridian/analysis.py` from the repository root. Source cutoff: 2026-10-01 monthly adjusted-close observation; downloaded 2026-10-22. The Git commit for the final Project 2 package has **not yet been created**.
+Decision/user: Meridian Foundation CIO; reject the QQQ/SPY/NVDA/VOO result as an adoptable allocation and retain it only as a pilot calculation. Run `python3 assignments/project-2-meridian/analysis.py` from the repository root. Source cutoff: 2026-10-01 monthly adjusted-close observation; downloaded 2026-10-22. Reproducible package snapshot: Git commit `d56e7a6`.
 
 ## Data and convention ledger
 
