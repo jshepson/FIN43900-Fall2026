@@ -22,9 +22,13 @@ It was run locally on 2026-11-17 with Python 3; the result is also readable in `
 |---|---|---|---|---|---|---|
 |  |  | `python3 assignments/project-2-meridian/analysis.py` |  |  | `assignments/project-2-meridian/visible_output.json` |  |
 
+A formatting-only example is available in `examples/Lab_20_worked_example.md`; it is not a substitute for this partner record.
+
 ## Changed input — required student action
 
 **Status: open.** The historical all-59 versus latest-36-month comparison is preserved as validation evidence, but it is not a compliant Locked Changed-Input Record because no pre-run student prediction and immutable prediction commit are available. Before rerunning, the student must personally write the old/new window and units, expected number directions, and expected decision effect; commit and push that prediction; then run without AI assistance and complete the actual/reconciliation fields in `docs/validation-and-ai-use.md`.
+
+`examples/Lab_20_worked_example.md` shows the required layout only. It is explicitly not student-authored or AI-closed evidence.
 
 ## Explain-code prompt
 
