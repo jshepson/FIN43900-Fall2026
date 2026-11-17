@@ -1,0 +1,22 @@
+{
+  "decision": "Reject as an adoptable allocation; retain only as a pilot calculation.",
+  "as_of": "2026-10-01 (last monthly adjusted-close observation)",
+  "objective": "6.5% annualized arithmetic return estimate; gross and pre-cost",
+  "constraints": "long-only 5% grid; 0% reserve floor because supplied universe has no reserve sleeve",
+  "all_59_monthly_returns": {
+    "observations": 59,
+    "annualized_arithmetic_returns_percent": {"QQQ": 14.69, "SPY": 13.09, "NVDA": 50.34, "VOO": 13.14},
+    "least_risk_feasible_mix_percent": {"QQQ": 0, "SPY": 75, "NVDA": 0, "VOO": 25},
+    "expected_return_percent": 13.11,
+    "volatility_percent": 15.56
+  },
+  "last_36_monthly_returns": {
+    "observations": 36,
+    "annualized_arithmetic_returns_percent": {"QQQ": 25.54, "SPY": 22.15, "NVDA": 62.77, "VOO": 22.23},
+    "least_risk_feasible_mix_percent": {"QQQ": 0, "SPY": 100, "NVDA": 0, "VOO": 0},
+    "expected_return_percent": 22.15,
+    "volatility_percent": 12.25
+  },
+  "material_stability_result": "SPY rises 25 percentage points and VOO falls 25 percentage points when the all-history window is replaced by the latest 36 monthly returns. The selection changes from a 75/25 SPY/VOO overlap to 100% SPY.",
+  "reversal_condition": "Reconsider only after a complete mandate, a genuine reserve sleeve, net-of-costs objective, overlap treatment, and stability checks."
+}
