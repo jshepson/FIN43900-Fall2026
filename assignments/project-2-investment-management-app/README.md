@@ -37,7 +37,7 @@ The four-ticker classroom research universe is QQQ, SPY, NVDA, and VOO. It is de
 ## Before submitting
 
 1. Read every displayed number and every statement in the memo; edit only if it does not accurately reflect your work.
-2. Complete the human-authored prediction in `docs/locked-changed-input-record.md` **before** running its specified test. Commit and push that prediction. Run the app/test without AI help, append the actual result, then commit and push again. Do not backdate or manufacture this record.
+2. With AI off, choose one **fresh** app-control stress not already disclosed in this repository, then complete the human-authored prediction in `docs/locked-changed-input-record.md` **before** running it. Commit and push that prediction. Run only that setting without AI help, append the actual result, then commit and push again. Do not backdate or manufacture this record. The already-disclosed 59-versus-36-month comparison cannot be reused as the prediction.
 3. Start the app from a fresh terminal, screen-record the three videos using the scripts in `transcripts/`, upload them to YouTube as unlisted/public, enable captions/transcripts, and replace the `VIDEO_URL_*` placeholders in the manifest.
 4. Check each YouTube link while logged out and add its duration plus timestamp index in the manifest. If your spoken words differ from a supplied script, correct the matching transcript file so it matches the video.
 5. Replace `COMMIT_AFTER_YOUR_LOCKED_RECORD` in the manifest with the actual commit SHA. Commit and push the folder. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` to Brightspace, and submit the repository and three YouTube links there.

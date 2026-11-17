@@ -8,7 +8,7 @@ This record must be written in your own words before you run the test below or a
 
 - Author: [your name]
 - Local date/time and time zone: [fill in]
-- Exact changed input: all 59 monthly returns → latest 36 monthly returns; costs = 0 bps; estimate haircut = 0.00 percentage points; reserve constraint temporarily set to 0.0% strictly for mechanics inspection.
+- Exact changed input: [choose one fresh, not-yet-run app control change; write exact old and new values with units. Do not reuse the already-disclosed 59-versus-36-month comparison.]
 - AI-off prediction: [write your own expected direction and whether the 20-point stop condition will be triggered.]
 - Why: [write your own reasoning from the data/method.]
 - Commit SHA made before execution: [fill in after commit and push]
@@ -20,4 +20,4 @@ This record must be written in your own words before you run the test below or a
 - Reconciliation: [compare predicted versus actual result and state the decision effect]
 - Commit SHA preserving result: [fill in]
 
-The known prior classroom comparison is documented elsewhere; do not copy it into the prediction before you independently complete the locked record.
+The 59-versus-36-month comparison is already disclosed in this project and cannot honestly be a fresh prediction. Choose a new, precisely stated stress setting, make your prediction with AI off, commit it, then run only that setting and reconcile the result.
