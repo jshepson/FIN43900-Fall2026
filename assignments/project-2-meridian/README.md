@@ -1,5 +1,7 @@
 # Project 2 — Meridian Historical-Window Allocation Review
 
+**Lab 20:** Start with [SUBMIT-LAB-20.md](SUBMIT-LAB-20.md) for the complete one-folder submission index.
+
 ## Decision and intended user
 
 For the Meridian Foundation CIO, **reject the QQQ/SPY/NVDA/VOO output as an adoptable allocation and retain it only as a pilot calculation.** The supplied universe lacks a reserve asset and has overlapping S&P 500 exposures; its lowest-risk answer changes materially when the estimation window changes. Reconsider only after the mandate defines a genuine reserve sleeve, net-of-costs objective, overlap treatment, loss rule, and breach response, and the result passes stability tests.
