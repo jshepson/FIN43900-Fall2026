@@ -2,7 +2,7 @@
 
 **AI disclosure:** I used Codex to help organize the app and documentation. The analysis and decision are mine. This is for education, not investment advice.
 
-The application is running live. My recommendation to the Meridian Foundation CIO is: reject allocation to this process today, and retain it only as a research pilot. The current allocation range is zero percent. A later zero-to-five-percent pilot is possible only after every reversal condition is met and the CIO approves it.
+The application is running live with 59 monthly returns, zero costs, zero estimate haircut, and Meridian's actual 3 percent reserve minimum. My recommendation to the Meridian Foundation CIO is: reject allocation to this process today, and retain it only as a research pilot. The current allocation range is zero percent. A later zero-to-five-percent pilot is possible only after every reversal condition is met and the CIO approves it.
 
 The reason is simple and decisive. Meridian requires a 3 percent reserve held in cash or daily-liquid government securities for four quarterly payouts. The QQQ, SPY, NVDA, and VOO universe has no eligible reserve sleeve. It therefore cannot pass the mandate, regardless of its historical return estimate or optimizer result.
 
