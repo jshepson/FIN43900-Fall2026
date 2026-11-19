@@ -25,7 +25,7 @@ Open <http://127.0.0.1:8000>. Press `Ctrl+C` to stop. A reviewer can alter the e
 - `docs/decision-memo.md` — committee recommendation, allocation range, triggers, and risks.
 - `docs/validation-and-ai-use.md` — data/validation/AI-use ledger and changed-input procedure.
 - `docs/locked-changed-input-record.md` — the student-authored, commit-before-run record that must be completed honestly.
-- `transcripts/` — recording-ready verbatim scripts for the three required videos.
+- `transcripts/` — recording-ready verbatim scripts plus exact, separate recording guides for the three required videos. Read aloud only `video-1-research-evolution.md`, `video-2-code-walkthrough.md`, and `video-3-committee-presentation.md`; use the matching `video-*-recording-guide.md` files only for on-screen actions.
 - `project-submission-manifest.csv` — final submission checklist and locations.
 
 ## Mandate and method
